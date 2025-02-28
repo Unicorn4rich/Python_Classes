@@ -1,0 +1,31 @@
+for setup envoirment:
+
+1. install in powershwll =>  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+2. pip install uv
+
+
+Files Info:
+
+Package.json => Kon kon si dependencies install hui hai unko rakhta hai.
+Package.lock.json => wo jo packages install huy hain unka kon kon sa version use kar ke project
+                     bnaya gaya hai uska recode rakhta hai.
+Node-Modules => ye un sab installed packages ko apne andar rakhta hai.
+
+
+Now in Python:
+
+Package.json      =>   Tomil file  
+Package.lock.json =>   UV-Lock
+Node-Modules      =>   .Venv
+
+
+
+Project Envoiment
+
+1. uv init         => Create project folders
+2. uv add ruff     => Create .venv folder
+4. active vertual invoirment got to => (.venv\Scipts\active right click and copy realtive path =>  .venv\Scripts\activate) => past terminal and run => now ready your Envoirment create appy.py and start. 
+5. All packages install in Once time not a one by one  => Create file => requirment.txt
+6. in reuirment.txt => write all packages in this file => uv add -r requirment.txt
+7. Create => hello.ipynb => this is same to sam google colab file 
+8. installation for hello.ipynb => uv pip install ipykernel -U --force-reinstall
